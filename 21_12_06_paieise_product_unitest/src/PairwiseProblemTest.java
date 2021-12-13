@@ -9,6 +9,12 @@ class PairwiseProblemTest {
     PairwiseProblem pp = new PairwiseProblem();
 
     @Test
+    public void testSolve2_manyElements() {
+        int[] array = {20, 10, 5, 1, 3, 15, 1};
+        assertEquals(300, pp.solve2(array));
+    }
+
+    @Test
     public void testSolve2_emptyArray() {
         int[] array = {};
         assertEquals(0, pp.solve(array));
