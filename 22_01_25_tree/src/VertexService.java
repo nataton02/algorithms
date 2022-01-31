@@ -14,11 +14,10 @@ public class VertexService {
             rightHeight += countHeight(root.rightChild);
         }
 
-        if (rightHeight > leftHeight) {
+        if (rightHeight > leftHeight)
             return rightHeight;
-        } else {
+        else
             return leftHeight;
-        }
     }
 
     public int countVertices(Vertex root) {
